@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home - Katherine Hiraldo</title>
+        <!--jQuery-->
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+        <!--Ajax-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider-min.js"></script>
+        <!--Links-->
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="styles.css">     
+        <!--FONTS-->   
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sigmar&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-container">
+                <h1>Katherine Hiraldo</h1>
+                <nav id="main-nav">
+                    <ul>
+                        <li><a href="#resume-link">Resume</a></li>
+                        <li><a href="#services-link">Services</a></li>
+                        <li><a href="#game-link">Game</a></li>
+                        <li><a href="#contact-link">Contact Form</a></li>
+                        <li><a href="https://soultechcreative.tech/">Home</a></li>
+                    </ul>
+                </nav>  
+                <button id="theme-toggle" aria-label="Toggle dark mode">
+                    <img src="Files/lightmodeicon.png" alt="Toggle theme icon" id="theme-icon">
+                </button>          
+            </div>
+            <img src="Files/Katherine.png" alt="Picture of Katherine Hiraldo" id="profile-picture">  
+            <p id="header-text">Digital Marketing Specialist with over 10 years of experience as a Web and Graphic Designer and 7+ years as a Content and Social Media Manager. I offer a robust combination of creative, strategic, and technical expertise that makes me an asset to any digital team. This website was created using HTML, CSS, and JavaScript.</p>        
+        </header>
+        <section class="resume"><!--I HAD TO USE DIVS ACCORDING TO THE JQUERY UI DOCUMENTATION-->
+            <h2 id="resume-link">Resume</h2>
+            <div id="resume-tabs">
+                <ul>
+                    <li><a href="#column1">Experience</a></li>
+                    <li><a href="#column2">Skills</a></li>
+                </ul>
+                <div class="columns">
+                    <div id="column1">
+                        <h3>Digital Marketing Specialist</h3>
+                        <p>Providing tailored web and graphic design services along with comprehensive marketing support for B2B, B2C companies, and nonprofit organizations.</p>
+                        <ul id="column1list">
+                            <li>Design and develop clean, accessible, and responsive websites on various platforms including WordPress, Squarespace, and Wix, ensuring optimal user experience and adherence to web accessibility standards.</li>
+                            <li>Craft effective copywriting and UX/technical writing to enhance user engagement and deliver SEO-optimized content across client websites, digital products, and social media platforms.</li>
+                            <li>Plan and execute successful email marketing campaigns using tools such as Salsa Labs, SendFox, Mailchimp, and Constant Contact, ensuring targeted messaging and measurable outcomes.</li>
+                            <li>Create compelling, brand-aligned graphics for websites, social media, and other digital assets, enhancing visual storytelling and brand recognition.</li>
+                            <li>Manage client social media accounts, developing strategic content calendars, increasing follower engagement, and driving traffic to client websites.</li>
+                            <li>Develop and implement paid advertising campaigns on platforms like Facebook Ads and Google Ads to achieve specific marketing goals and increase client reach.</li>
+                        </ul>
+                    </div>
+                    <div id="column2">
+                        <h3>Core Competencies</h3>
+                        <p>Proven ability to design and develop visually engaging, user-centric websites and dynamic digital content that elevate brand identity and boost engagement. Adept at crafting cohesive content strategies, managing successful social media campaigns, and leveraging analytics to inform data-driven decisions. A proactive problem solver with a strong eye for design, proficient in leading design software, and dedicated to delivering impactful, high-quality results.</p>
+                        <ul id="column2list">
+                            <li>Web Design</li>
+                            <li>Graphic Design</li>
+                            <li>Content Strategy</li>
+                            <li>Project Management</li>
+                            <li>Social Media Management</li>
+                            <li>Copywriting & Editing</li>
+                            <li>Data Analytics</li>
+                            <li>UX/UI</li>
+                            <li>SEO/SEM</li>
+                            <li>Bilingual (English and Spanish)</li>
+                            <li>HTML, CSS, JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <h2 id="services-link">Featured Services</h2>
+            <div id="service-container">
+                <div class="main-service" data-service="1">
+                    <img src="Files/1A.png" alt="A vibrant graphic design collage featuring various shapes, colors, and textures arranged artistically." id="main-serviceimage">
+                    <div class="main-serviceinfo">
+                        <h3 id="main-servicetitle">Graphic Design</h3>
+                        <p id="main-servicetext">Graphic Design combining technology and art. Services offered include AI generation, Photo and Video editing, Advertisements, Brand Kits and much more. Tools used include Adobe Creative Suite, among others.</p>
+                    </div>
+                </div>
+                <div class="album-service" data-service="2">
+                    <img src="Files/2A.png" alt="Visual representation of a website on a laptop and mobile phone, highlighting innovative graphics and a professional look." id="album-serviceimage">
+                    <div class="album-serviceinfo">
+                        <h3 id="album-servicetitle">Web Design</h3>
+                        <p id="album-servicetext">Clean, responsive, accessible, and affordable websites. Platforms include WordPress, Wix, and Squarespace, among others.</p>
+                    </div>
+                </div>
+                <div class="movie-service" data-service="3">
+                    <img src="Files/3A.png" alt="A screenshot showcasing the SEO page with analytics, keyword suggestions, and optimization strategies for web content." id="movie-serviceimage">
+                    <div class="movie-serviceinfo">
+                        <h3 id="movie-servicetitle">SEO</h3>
+                        <p id="movie-servicetext">I can also help you with tried and true SEO tactics for your websites and social media content, to increase traffic, engagement, and monetization.</p>
+                    </div>
+                </div>
+            </div>
+            <nav class="service-links">
+                <ul>
+                    <li><a href="#" data-service="1">Graphic Design</a></li>
+                    <li><a href="#" data-service="2">Web Design</a></li>
+                    <li><a href="#" data-service="3">SEO</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="portfolio"><!--I HAD TO USE DIVS ACCORDING TO THE PLUGIN DOCUMENTATION-->
+            <h2>Portfolio</h2>
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <img src="Files/slide1.png" alt="The future is female graphic">
+                        <p class="flex-caption">Blog Post Graphics</p>
+                    </li>
+                    <li>
+                        <img src="Files/slide2.png" alt="Dominican Community Center website screenshot">
+                        <p class="flex-caption">Web Design</p>
+                    </li>
+                    <li>
+                        <img src="Files/slide3.png" alt="MS Magazine post for social media on the Latina pay gap">
+                        <p class="flex-caption">Social Media Graphics</p>
+                    </li>
+                    <li>
+                        <img src="Files/slide4.png" alt="Storyboard screengrab of an app concept made with After Effects">
+                        <p class="flex-caption">After Effects/Motion Graphics</p>
+                    </li>
+                    <li>
+                        <img src="Files/slide5.png" alt="Mockup of app design">
+                        <p class="flex-caption">UX/UI</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="game">
+            <h2 id="game-link">Let's Play a Game</h2>
+            <p>I'm thinking of a number between 1 and 10. Can you guess what it is?</p>
+            <form id="game-form">
+                <label for="user-guess">Your guess:</label>
+                <input type="number" id="user-guess" name="user-guess" min="1" max="10" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section class="pokemon-section"><!--I HAD TO USE DIVS ACCORDING TO THE API DOCUMENTATION-->
+            <h2>Since you like games you might want to try Pokémon! Learn about them here:</h2>
+            <div class="single-pokemon-card"></div>
+            <button id="fetch-pokemon-button">Catch another Pokemon!</button>
+        </section>
+        <section class="contact-form">
+            <h2 id="contact-link">PLEASE DO NOT CONTACT ME THROUGH THIS FORM! THIS IS JUST FOR THE PORTFOLIO.</h2>
+            <form id="contactForm" action="#" method="POST" novalidate>
+                <!-- First Name -->
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Your first name goes here, at least 3 letters are required" required>
+                <span class="error" id="firstNameError"></span>
+        
+                <!-- Last Name -->
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Your last name goes here, at least 3 letters are required" required>
+                <span class="error" id="lastNameError"></span>
+        
+                <!-- Phone Number -->
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="10 digits and 2 dashes ex: 123-456-7890">
+                <span class="error" id="phoneError"></span>
+        
+                <!-- Email Address -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Please enter your email address">
+                <span class="error" id="emailError"></span>
+        
+                <!-- Comments -->
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="5" required></textarea>
+                <span class="error" id="commentsError"></span>
+        
+                <!-- Preferred Contact Method -->
+                <fieldset>
+                    <legend>Preferred Contact Method:</legend>
+                    <input type="radio" id="contactPhone" name="contactMethod" value="phone" required>
+                    <label for="contactPhone">Phone</label>
+        
+                    <input type="radio" id="contactEmail" name="contactMethod" value="email" required>
+                    <label for="contactEmail">Email</label>
+                    <span class="error" id="contactMethodError"></span>                
+                </fieldset>
+    
+                <div id="submissionMessage"></div>
+    
+                <!-- Button -->
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2025 Katherine Hiraldo. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

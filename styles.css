@@ -1,0 +1,647 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root{
+    font-size: 16px;
+    --fonts: Arial, sans-serif;
+    --white: #fff;
+    --black: #000000;
+    --canary: #F2D230;
+    --palm: #05A678;
+    --pewter: #3b3b3b;
+    --sky: #49A3F2;
+    --baby: #F2BDBD;
+    
+    /*LIGHT MODE*/
+    --header-bg:var(--canary);
+    --resume-bg:var(--baby);
+    --services-bg:var(--palm);
+    --game-bg:var(--canary);
+    --contact-bg:var(--baby);
+    --footer-bg:var(--black);
+    --text-color:var(--black);
+    --h1-color:var(--white);
+    --main-nav-a:var(--black);
+    --header-text:var(--white);
+    --h2-color:var(--black);
+    --footer-color:var(--white);
+    --game-p:var(--black);
+    --columns-article-bg:var(--white);
+    --columns-h3-color:var(--sky);
+    --columns-p-color: #3C0123;
+    --services-inner-bg:var(--white);
+    --services-h3-color:var(--columns-p-color);
+    --services-h3-p:var(--pewter);
+    --portfolio-bg:var(--sky);
+    --game-form-bg:var(--white);
+    --game-label:var(--black);
+    --contact-form-bg:var(--white);
+    --error-msg: #FF0000;
+  }
+
+  /*DARK MODE*/
+
+body.dark-mode {
+    --header-bg: #3C0123;
+    --resume-bg: black;
+    --services-bg: #050a30;
+    --game-bg: #8B5F2D;
+    --contact-bg: #3C0123;
+    --footer-bg: var(--black);
+    --text-color:var(--white);
+    --main-nav-a:var(--white);
+    --header-text:var(--white);
+    --h2-color:var(--white);
+    --game-p:var(--white);
+    --columns-article-bg:var(--sky);
+    --columns-h3-color:var(--black);
+    --columns-p-color:var(--pewter);
+    --services-inner-bg:var(--black);
+    --services-h3-color:var(--white);
+    --services-h3-p:var(--white);
+    --portfolio-bg:var(--black);
+    --game-form-bg:var(--black);
+    --game-label:var(--white);
+    --contact-form-bg: #8B5F2D;
+    --error-msg: var(--canary);
+
+}
+
+/*THEME TOGGLE/CONTROL*/
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+}
+
+#theme-icon {
+    width: 40px;
+    height: 40px;
+}
+
+
+body {
+    width: 1280px;
+    font-family: "Noto+Sans", Arial, sans-serif;
+    line-height: 1.5;
+    background-color: var(--white);
+    color: var(--black);
+    padding: 20px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*HEADER*/
+header {
+    background-color: var(--header-bg);
+    color: var(--text-color);
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Sigmar", "Noto+Sans", sans-serif;
+    font-size: 3.3rem;
+    margin: 0;
+    flex-grow: 1; 
+    text-align: center;
+    color:var(--h1-color);
+}
+
+#main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: var(--main-nav-a);
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+#main-nav a:hover {
+    background-color: #0073e6;
+    color: white;
+}
+
+#profile-picture {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin: 2rem auto;
+    display: block;
+}
+
+#header-text {
+    font-family: "Noto+Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    color: var(--header-text);
+    text-shadow: 2px 2px 2px #000000;
+}
+
+/*RESUME SECTION*/
+.resume {
+    background-color: var(--resume-bg);
+    padding: 4rem 2rem;
+    max-width: 1280px;
+    margin: 0 auto;   
+    text-align: center;
+    border-top: none; 
+}
+
+.resume h2 {
+    font-family: "Sigmar", "Noto+Sans", sans-serif;
+    font-size: 2.5rem;
+    color: var(--h2-color);
+    margin: 0 0 2rem 0; 
+    padding-top: 0;
+}
+
+.columns h3 {
+    font-family: "Noto+Sans", sans-serif;
+    font-size: 1.5rem;
+    color: var(--columns-h3-color);
+    margin-bottom: 1rem;
+}
+
+.columns p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--columns-p-color);
+    margin-bottom: 1.5rem;
+}
+
+.columns ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.columns li {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-left: 1.5rem;
+		text-align: left;
+    position: relative;
+    margin-bottom: 0.75rem;
+}
+
+.columns li::before {
+    content: "•";
+    color: #F2BDBD;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+} 
+
+#column2list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 10px; 
+    padding: 0; 
+    list-style-type: none;
+  }
+  
+  #column2list li {
+    padding: 5px 0;
+    position: relative;
+    padding-left: 1em; 
+  }
+
+/*SERVICES SECTION*/
+.services {
+    background-color: var(--services-bg);
+    padding: 4rem 2rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.services h2 {
+    font-family: "Sigmar", "Noto+Sans", sans-serif;
+    font-size: 2.5rem;
+    color: var(--h2-color);
+    margin-bottom: 3rem;
+}
+
+
+.main-service, .album-service, .movie-service {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    background: var(--services-inner-bg);
+    padding: 2rem;
+    border: 5px solid #49A3F2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.main-service {
+    display: block; 
+}
+
+.main-service img, .album-service img, .movie-service img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-height: 400px; 
+    object-fit: cover;
+}
+
+.main-serviceinfo, .album-serviceinfo, .movie-serviceinfo {
+    text-align: left;
+    max-width: 600px;
+}
+
+.services h3 {
+    font-family: "Noto+Sans", sans-serif;
+    font-size: 2rem;
+    color: var(--services-h3-color);
+    margin-bottom: 1rem;
+}
+
+.services p {
+    font-size: 1.1rem;
+    color: var(--services-h3-p);
+    line-height: 1.6;
+}
+
+
+.service-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.service-links a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #FFF;
+    padding: 0.5rem 1rem;
+    border: 2px solid #F2BDBD;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.service-links a:hover {
+    background: #0073e6;
+    color: #FFF;
+}
+
+.service-links {
+    margin-top: 2rem;
+    z-index: 10; 
+    position: relative; 
+}
+
+/*PORTFOLIO SECTION*/
+.portfolio {
+    background-color: var(--portfolio-bg);
+    padding: 4rem 2rem;
+    max-width: 1280px;
+    margin: 0 auto;   
+    text-align: center;
+    border-top: none; 
+}
+
+.portfolio h2 {
+    font-family: "Sigmar", "Noto+Sans", sans-serif;
+    font-size: 2.5rem;
+    color: var(--h2-color);
+    margin-bottom: 3rem;
+}
+
+
+.flexslider {
+    margin: 0;
+    padding: 0;
+    max-width: 800px; 
+    overflow: hidden; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.flex-direction-nav a {
+    overflow: visible !important; /* Override the default overflow: hidden */
+}
+
+
+.flex-caption {
+    width: 96%;
+    padding: 2%;
+    left: 0;
+    bottom: 0;
+    background: var(--canary);
+    color: black;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px;
+}
+
+li.css a {
+    border-radius: 0;
+}
+
+
+.flexslider .slides img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* GAME SECTION */
+.game {
+    background-color: var(--game-bg);
+    padding: 4rem 2rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;    
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.game h2 {
+    font-family: "Sigmar", "Noto+Sans", sans-serif;
+    font-size: 2.5rem;
+    color: var(--h2-color);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.game p {
+    font-size: 1.2rem;
+    color: var(--game-p);
+    margin-bottom: 2rem;
+}
+
+#game-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    background: var(--game-form-bg);
+    padding: 2rem;
+    border: 2px solid #333;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#game-form label {
+    font-size: 1.2rem;
+    color: var(--game-label);
+}
+
+#user-guess {
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    border: 2px solid #333;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+#game-form button {
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+    color: #FFF;
+    background-color: #EF476F;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#game-form button:hover {
+    background-color: #D43F61;
+}
+
+/* POKEMON SECTION */
+.pokemon-section {
+    background-color: var(--game-bg);
+    padding: 4rem 2rem;
+    max-width: 1280px;
+    margin: 0 auto;   
+    text-align: center;
+    border-top: none; 
+}
+
+.pokemon-section h2 {
+    font-family: "Sigmar", "Noto+Sans", sans-serif;
+    font-size: 2.5rem;
+    color: var(--h2-color);
+    margin-bottom: 2rem;
+}
+
+.pokemon-section h3 {
+    font-family: "Noto+Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--columns-h3-color);
+    margin-bottom: 0.5rem;
+}
+
+.pokemon-section p {
+    font-size: 1.2rem;
+    color: var(--game-p);
+    margin-bottom: 1rem;
+}
+
+#fetch-pokemon-button {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    color: #FFF;
+    background-color: #EF476F;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* CONTACT FORM SECTION */
+.contact-form {
+    background-color: var(--contact-bg);
+    padding: 4rem 2rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    font-family: "Sigmar", "Noto+Sans", sans-serif;
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+#contactForm {
+    background: var(--contact-form-bg);
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#contactForm label {
+    font-size: 1.1rem;
+    color: black;
+    text-align: left;
+    font-weight: 600;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="tel"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: 2px solid #DDD;
+    border-radius: 8px;
+    width: 90%;
+    transition: border-color 0.3s ease;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border-color: #FF6F61;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 111, 97, 0.5);
+}
+
+#contactForm fieldset {
+    border: none;
+    text-align: left;
+    padding: 0;
+}
+
+#contactForm legend {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+#contactForm input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+#contactForm button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color: #FFF;
+    background-color: #05A678; 
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#contactForm button:hover {
+    background-color: #048C68;
+}
+
+.error {
+    color: var(--error-msg);
+    font-size: 0.8em;
+    display: block;
+    margin-top: 5px;
+}
+
+#submissionMessage {
+    display: none;
+  }
+
+/* FOOTER*/
+footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-color);
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    border-top: 4px solid #05A678; 
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.6;
+}
