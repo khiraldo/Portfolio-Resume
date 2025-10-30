@@ -1,4 +1,15 @@
-# Kay Hiraldo | Web Design Portfolio
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/khiraldo/Portfolio-Resume/main/kayhlogo_white.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/khiraldo/Portfolio-Resume/main/kayhlogo_black.png">
+    <img alt="Kay Hiraldo Logo" src="https://raw.githubusercontent.com/khiraldo/Portfolio-Resume/main/kayhlogo_black.png" width="200">
+  </picture>
+  <br>
+  <em>Minimalist Structure. Maximum Impact.</em>
+</p>
+<br>
+
+# Web Design Portfolio
 
 Welcome to my personal web design portfolio which reflects my approach to clean, accessible, and adaptive design. I love exploring how design and technology can connect people to meaningful digital experiences.
 
@@ -44,7 +55,7 @@ My goal is to attract freelance opportunities and creative agency roles that val
 ## Contact
 
 Let’s connect! Feel free to reach out if you’d like to collaborate or learn more about my work.  
-- **Email:** [khiraldo@asu.edu](mailto:khiraldo@asu.edu)
+- **Email:** [soultechcreative@gmail.com](mailto:soultechcreative@gmail.com)
 
 ---
 
