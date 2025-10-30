@@ -62,6 +62,7 @@ My goal is to attract freelance opportunities and creative agency roles that val
 
 - [**Equal Voice | Equal Future**](https://fundforwomensequality.org/hub-home/): I developed this website as part of my work with The Fund for Women's Equality. This project was for a digital media hub consolidating blogs, videos, and podcasts promoting gender equity.  
 
+
 ---
 ## Contact
 
