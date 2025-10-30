@@ -45,10 +45,17 @@ My goal is to attract freelance opportunities and creative agency roles that val
 - [**Manifestor Oracle API**](https://github.com/khiraldo/manifestor-oracle-api): A custom-built API for my Blessed Manifestation website, allowing users to pull free oracle cards online for guidance and inspiration.
 <p align="center">
   <img src="https://raw.githubusercontent.com/khiraldo/Portfolio-Resume/287e934eacc3d770c2b6178920846b0c11283144/1_TheManifestor.png" 
-       alt="Screenshot of the Manifestor Oracle API project" width="200" height="400">
+       alt="Image of one of the cards in the Manifestor Oracle API project" width="200" height="400">
 </p>
+<p align="center"><em>Image of one of the cards in the Manifestor Oracle API project.</em></p>
+<br>
 
-- [**The Kids Social Club**](https://www.facebook.com/thekidssocialclub): I create social media and promotional graphics for a children’s activity center in Florida, increasing local engagement and membership sign-ups.  
+- [**The Kids Social Club**](https://www.facebook.com/thekidssocialclub): I create social media and promotional graphics for a children’s activity center in Florida, increasing local engagement and membership sign-ups.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/khiraldo/Portfolio-Resume/fa7318f7036601e258f0f24822a12d94221dc006/1.png"
+       alt="Promotional graphic created for The Kids Social Club" width="200" height="400">
+</p>
+<p align="center"><em>A sample of the brand kit I created for The Kids Social Club.</em></p>
 
 ---
 ## Past Projects
