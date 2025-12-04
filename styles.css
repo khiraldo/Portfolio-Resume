@@ -89,7 +89,7 @@ table {
   /*DARK MODE*/
 
 body.dark-mode {
-    --header-bg: #3C0123;
+    --header-bg: #dcd0ff;
     --resume-bg: black;
     --services-bg: #050a30;
     --game-bg: #8B5F2D;
@@ -156,13 +156,9 @@ header {
     align-items: center;
 }
 
-h1 {
-    font-family: "Sigmar", "Noto+Sans", sans-serif;
-    font-size: 3.3rem;
-    margin: 0;
-    flex-grow: 1; 
-    text-align: center;
-    color:var(--h1-color);
+#site-logo {
+    height: 100px;      
+    width: auto;
 }
 
 #main-nav ul {
@@ -201,8 +197,12 @@ h1 {
     line-height: 1.5;
     margin-bottom: 2rem;
     color: var(--header-text);
-    text-shadow: 2px 2px 2px #000000;
 }
+.header, 
+.header * {
+    color: black !important;
+}
+
 
 /*RESUME SECTION*/
 .resume {
