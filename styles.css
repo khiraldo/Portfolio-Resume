@@ -74,7 +74,7 @@ table {
     --footer-color:var(--white);
     --game-p:var(--black);
     --columns-article-bg:var(--white);
-    --columns-h3-color:var(--sky);
+    --columns-h3-color: #000075; 
     --columns-p-color: #3C0123;
     --services-inner-bg:var(--white);
     --services-h3-color:var(--columns-p-color);
@@ -273,6 +273,34 @@ header {
     padding-left: 1em; 
   }
 
+  .case-study-item h4 {
+    font-weight: bold; 
+    font-size: 1.1rem; 
+    color: var(--columns-h3-color); 
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.case-study-item p {
+    font-size: 14px; 
+    color: black; 
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.case-study-item p a {
+    color: var(--columns-h3-color); 
+    text-decoration: underline; 
+    font-weight: 600; 
+}
+
+#linkedin {
+    color: var(--services-h3-p);
+    font-size: 20px;
+}
+
 /*SERVICES SECTION*/
 .services {
     background-color: var(--services-bg);
@@ -419,6 +447,11 @@ li.css a {
     width: 100%;
     height: auto;
     display: block;
+}
+
+#behance {
+    color: var(--services-h3-p);
+    font-size: 20px;
 }
 
 /* GAME SECTION */

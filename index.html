@@ -41,10 +41,12 @@
         </header>
         <section class="resume"><!--I HAD TO USE DIVS ACCORDING TO THE JQUERY UI DOCUMENTATION-->
             <h2 id="resume-link">Resume</h2>
+            <p id="linkedin">View my full Resume on <a href="https://www.linkedin.com/in/katherinehiraldo/">LinkedIn</a></p>
             <div id="resume-tabs">
                 <ul>
                     <li><a href="#column1">Experience</a></li>
                     <li><a href="#column2">Skills</a></li>
+                    <li><a href="#column3">Case Studies</a></li>
                 </ul>
                 <div class="columns">
                     <div id="column1">
@@ -75,6 +77,28 @@
                             <li>Bilingual (English and Spanish)</li>
                             <li>HTML, CSS, JavaScript</li>
                         </ul>
+                    </div>
+                    <div id="column3">
+                        <h3>Marketing & Design Case Studies</h3>
+                        <p>A selection of projects demonstrating my strategic approach to web design, digital marketing, and content creation, highlighting measurable outcomes.</p>
+                        <div class="case-study-item">
+                            <h4>Creation of the Digital Media Hub, for the Fund for Women’s Equality</h4>
+                            <p><u>Objective:</u> the goal of this project was to develop a dedicated digital media hub within the Fund for Women’s Equality (FFWE) website, aimed at consolidating blog posts, videos, and podcast episodes.</p>
+                            <p><u>Process:</u> to stay within budget I proposed nesting the new hub within the existing FFWE website. I used the Elementor plug-in in WordPress to build the hub pages. My work also included creating a comprehensive branding package for the FFWE, which I implemented across the hub, and launching their official social media accounts on Facebook, Twitter, and Instagram.</p>
+                            <p><u>Results:</u> The project was completed within budget and launched around April 2022. Although the timeline experienced a small scope creep while awaiting approval from the Board of Directors, subsequent updates were successfully implemented following user feedback after the launch.  My contract with the FFWE ended June 2023, but the website remains and can be viewed here: 
+                            <a href="https://fundforwomensequality.org/hub-home/">Equal Voice Equal Future</a></p>
+                        </div>
+                        <div class="case-study-item">
+                            <h4>Creation of my portfolio website using HTML, CSS, and JavaScript.</h4>
+                            <p><u>Objective:</u> this project originated as my final assignment for my Graphic Design degree from Arizona State University. The primary objective was to demonstrate my proficiency in HTML, CSS, and JavaScript.</p>
+                            <p><u>Process:</u> I began the project by creating a GitHub repository and developing the page's wireframe. After compiling the website content into a separate document, I started development by first coding the HTML structure in Visual Studio Code. Following content and structure finalization, I focused on CSS styling. The page was completed with JavaScript, which I used to implement features like the Game components and the light/dark mode functionality.</p>
+                            <p><u>Results:</u> my work was completed within the timeframe, being that this was my final assignment for my degree. The current version of this portfolio website is the result.</p>
+                        </div>
+                        <div class="case-study-item">
+                            <h4>Creation of the “Manifestor Oracle” API for Blessed Manifestation</h4>
+                            <p><u>Objective:</u> For my spiritual business, Blessed Manifestation, which is hosted on WordPress, I developed an interactive feature where users can pull cards from my custom oracle deck, the “Manifestor Oracle.” My goal was to create an API for this functionality and integrate it into the site using the JavaScript skills I’ve learned.</p>
+                            <p><u>Process:</u> I had to develop a REST API that provides card data (using JSON) from the Manifestor Oracle deck, including information such as each card’s image, name, and meaning. To build the dataset, I created a comprehensive JSON file that listed all 80 oracle cards individually. In addition to writing the descriptions, I included meaningful and descriptive text for accessibility, such as alternate text (alt text) for each image to make the content more inclusive for screen reader users. I also had to rename all image files to match the file names listed in the JSON file so that the API could fetch them correctly from the GitHub repository. Once the data and assets were organized, I integrated the API from GitHub into the Blessed Manifestation website using JavaScript, allowing users to pull cards dynamically from the Manifestor Oracle deck directly on the site.</p>
+                            <p><u>Results:</u> I chose to include only the card name, image, and description, along with descriptive alt text to maintain accessibility for assistive devices. The page can be viewed <a href="https://blessedmanifestation.com/manifestor-oracle/">here</a>.</p>
                     </div>
                 </div>
             </div>
@@ -114,6 +138,7 @@
         </section>
         <section class="portfolio"><!--I HAD TO USE DIVS ACCORDING TO THE PLUGIN DOCUMENTATION-->
             <h2>Portfolio</h2>
+            <p id="behance">View my full Portfolio on <a href="https://www.behance.net/katherinehiraldo">Behance</a></p>
             <div class="flexslider">
                 <ul class="slides">
                     <li>
@@ -152,51 +177,6 @@
             <h2>Since you like games you might want to try Pokémon! Learn about them here:</h2>
             <div class="single-pokemon-card"></div>
             <button id="fetch-pokemon-button">Catch another Pokemon!</button>
-        </section>
-        <section class="contact-form">
-            <h2 id="contact-link">PLEASE DO NOT CONTACT ME THROUGH THIS FORM! THIS IS JUST FOR THE PORTFOLIO.</h2>
-            <form id="contactForm" action="#" method="POST" novalidate>
-                <!-- First Name -->
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" placeholder="Your first name goes here, at least 3 letters are required" required>
-                <span class="error" id="firstNameError"></span>
-        
-                <!-- Last Name -->
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="lastName" placeholder="Your last name goes here, at least 3 letters are required" required>
-                <span class="error" id="lastNameError"></span>
-        
-                <!-- Phone Number -->
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" placeholder="10 digits and 2 dashes ex: 123-456-7890">
-                <span class="error" id="phoneError"></span>
-        
-                <!-- Email Address -->
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" placeholder="Please enter your email address">
-                <span class="error" id="emailError"></span>
-        
-                <!-- Comments -->
-                <label for="comments">Comments:</label>
-                <textarea id="comments" name="comments" rows="5" required></textarea>
-                <span class="error" id="commentsError"></span>
-        
-                <!-- Preferred Contact Method -->
-                <fieldset>
-                    <legend>Preferred Contact Method:</legend>
-                    <input type="radio" id="contactPhone" name="contactMethod" value="phone" required>
-                    <label for="contactPhone">Phone</label>
-        
-                    <input type="radio" id="contactEmail" name="contactMethod" value="email" required>
-                    <label for="contactEmail">Email</label>
-                    <span class="error" id="contactMethodError"></span>                
-                </fieldset>
-    
-                <div id="submissionMessage"></div>
-    
-                <!-- Button -->
-                <button type="submit">Submit</button>
-            </form>
         </section>
         <footer>
             <p>&copy; 2025 Katherine Hiraldo. All rights reserved.</p>
