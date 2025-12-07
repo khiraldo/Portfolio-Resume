@@ -273,6 +273,10 @@ header {
     padding-left: 1em; 
   }
 
+  .case-study-item {
+    margin-bottom: 100px; 
+}
+
   .case-study-item h4 {
     font-weight: bold; 
     font-size: 1.1rem; 
@@ -294,11 +298,21 @@ header {
     color: var(--columns-h3-color); 
     text-decoration: underline; 
     font-weight: 600; 
+    
 }
 
 #linkedin {
     color: var(--services-h3-p);
     font-size: 20px;
+}
+
+.case-study-image {
+    max-width: 100%; 
+    height: auto;
+    max-height: 250px; 
+    object-fit: cover; 
+    display: block; 
+    margin: 10px 0 15px 0; 
 }
 
 /*SERVICES SECTION*/
@@ -523,146 +537,30 @@ li.css a {
     background-color: #D43F61;
 }
 
-/* POKEMON SECTION */
-.pokemon-section {
-    background-color: var(--game-bg);
+
+
+/* CONTACT INFO SECTION */
+.contact-info {
+    background-color: var(--sky); 
     padding: 4rem 2rem;
     max-width: 1280px;
-    margin: 0 auto;   
+    margin: 0 auto;
     text-align: center;
-    border-top: none; 
 }
 
-.pokemon-section h2 {
+.contact-info h2 {
     font-family: "Sigmar", "Noto+Sans", sans-serif;
     font-size: 2.5rem;
-    color: var(--h2-color);
-    margin-bottom: 2rem;
+    color: var(--black);
+    margin-bottom: 1.5rem;
 }
 
-.pokemon-section h3 {
-    font-family: "Noto+Sans", sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--columns-h3-color);
-    margin-bottom: 0.5rem;
-}
-
-.pokemon-section p {
-    font-size: 1.2rem;
-    color: var(--game-p);
-    margin-bottom: 1rem;
-}
-
-#fetch-pokemon-button {
-    padding: 1rem 2rem;
+.contact-info p {
     font-size: 1.5rem;
-    color: #FFF;
-    background-color: #EF476F;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+    color: var(--black);
+    line-height: 1.6;
+    margin-bottom: 0;
 }
-
-/* CONTACT FORM SECTION */
-.contact-form {
-    background-color: var(--contact-bg);
-    padding: 4rem 2rem;
-    max-width: 1280px;
-    margin: 0 auto;
-    text-align: center;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form h2 {
-    font-family: "Sigmar", "Noto+Sans", sans-serif;
-    font-size: 2.5rem;
-    color: var(--white);
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-}
-
-#contactForm {
-    background: var(--contact-form-bg);
-    padding: 3rem;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-#contactForm label {
-    font-size: 1.1rem;
-    color: black;
-    text-align: left;
-    font-weight: 600;
-}
-
-#contactForm input[type="text"],
-#contactForm input[type="tel"],
-#contactForm input[type="email"],
-#contactForm textarea {
-    padding: 1rem;
-    font-size: 1.1rem;
-    border: 2px solid #DDD;
-    border-radius: 8px;
-    width: 90%;
-    transition: border-color 0.3s ease;
-}
-
-#contactForm input:focus,
-#contactForm textarea:focus {
-    border-color: #FF6F61;
-    outline: none;
-    box-shadow: 0 0 8px rgba(255, 111, 97, 0.5);
-}
-
-#contactForm fieldset {
-    border: none;
-    text-align: left;
-    padding: 0;
-}
-
-#contactForm legend {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: black;
-    margin-bottom: 1rem;
-}
-
-#contactForm input[type="radio"] {
-    margin-right: 0.5rem;
-}
-
-#contactForm button {
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
-    color: #FFF;
-    background-color: #05A678; 
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-#contactForm button:hover {
-    background-color: #048C68;
-}
-
-.error {
-    color: var(--error-msg);
-    font-size: 0.8em;
-    display: block;
-    margin-top: 5px;
-}
-
-#submissionMessage {
-    display: none;
-  }
 
 /* FOOTER*/
 footer {
