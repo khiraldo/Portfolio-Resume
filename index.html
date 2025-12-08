@@ -45,7 +45,7 @@
         </header>
         <section class="resume"><!--I HAD TO USE DIVS ACCORDING TO THE JQUERY UI DOCUMENTATION-->
             <h2 id="resume-link">Resume</h2>
-            <p><a href="https://drive.google.com/file/d/1Arjole6I4OHa38v60Jx0BS5zYg9pFCAz/view?usp=sharing ">Download my Resume</a> </p>
+            <p id="resumedownload"><a href="https://drive.google.com/file/d/1Arjole6I4OHa38v60Jx0BS5zYg9pFCAz/view?usp=sharing ">Download my Resume</a> </p>
             <div id="resume-tabs">
                 <ul>
                     <li><a href="#column1">Experience</a></li>
@@ -84,7 +84,7 @@
                     </div>
                     <div id="column3">
                         <h3>Marketing & Design Case Studies</h3>
-                        <p>A selection of projects demonstrating my strategic approach to web design, digital marketing, and content creation, highlighting measurable outcomes.</p>
+                        <p id="column3p">A selection of projects demonstrating my strategic approach to web design, digital marketing, and content creation, highlighting measurable outcomes.</p>
                         <div class="case-study-item">
                             <h4>Creation of the Digital Media Hub, for the Fund for Women’s Equality</h4>
                             <img src="Screenshot 2025-10-22 190141.png" alt="Screenshot of the Fund for Women’s Equality digital media hub" class="case-study-image">
@@ -95,8 +95,9 @@
                         </div>
                         <div class="case-study-item">
                             <h4>Creation of my portfolio website using HTML, CSS, and JavaScript.</h4>
+                            <img src="RatfordInspo.png" alt="A screenshot of Frankie Ratford's Wix page" class="case-study-image">
                             <p><u>Objective:</u> this project originated as my final assignment for my Graphic Design degree from Arizona State University. The primary objective was to demonstrate my proficiency in HTML, CSS, and JavaScript.</p>
-                            <p><u>Process:</u> I began the project by creating a GitHub repository and developing the page's wireframe. After compiling the website content into a separate document, I started development by first coding the HTML structure in Visual Studio Code. Following content and structure finalization, I focused on CSS styling. The page was completed with JavaScript, which I used to implement features like the Game components and the light/dark mode functionality.</p>
+                            <p><u>Process:</u> I was inspired by a previous iteration of Frankie Ratford's website, which is the featured image for this case study. I began the project by creating a GitHub repository and developing the page's wireframe. After compiling the website content into a separate document, I started development by first coding the HTML structure in Visual Studio Code. Following content and structure finalization, I focused on CSS styling. The page was completed with JavaScript, which I used to implement features like the Game components and the light/dark mode functionality.</p>
                             <p><u>Results:</u> my work was completed within the timeframe, being that this was my final assignment for my degree. The current version of this portfolio website is the result.</p>
                         </div>
                         <div class="case-study-item">
@@ -144,7 +145,7 @@
         </section>
         <section class="portfolio"><!--I HAD TO USE DIVS ACCORDING TO THE PLUGIN DOCUMENTATION-->
             <h2>Portfolio</h2>
-            <p>View my full Portfolio on <a href="https://www.behance.net/katherinehiraldo">Behance</a></p>
+            <p id="portfoliolink">View my full Portfolio on <a href="https://www.behance.net/katherinehiraldo">Behance</a></p>
             <div class="flexslider">
                 <ul class="slides">
                     <li>
@@ -172,14 +173,15 @@
         </section>
         <section class="game">
             <h2 id="game-link">Let's Play a Game</h2>
-            <p>I created this game using JavaScript. I'm thinking of a number between 1 and 10. Can you guess what it is?</p>
+            <p id="gametext">I created this game using JavaScript.</p>
+            <p>I'm thinking of a number between 1 and 10. Can you guess what it is?</p>
             <form id="game-form">
                 <label for="user-guess">Your guess:</label>
                 <input type="number" id="user-guess" name="user-guess" min="1" max="10" required>
                 <button type="submit">Submit</button>
             </form>
         </section>
-        
+        <a href="#top" id="back-to-top" title="Back to Top">↑ Back to Top</a>
         <section class="contact-info">
             <h2 id="contactinfo">Get in Touch!</h2>
             <p>You can email me at: <a href="mailto:soultechcreative@gmail.com"><strong>soultechcreative@gmail.com</strong></a> or find me on <a href="https://www.linkedin.com/in/katherinehiraldo">LinkedIn</a></p>

@@ -269,6 +269,11 @@ body.dark-mode #tag-line {
     padding-top: 0;
 }
 
+#resumedownload {
+    font-size: 1.2rem;
+    color: var(--h2-color);
+}
+
 .columns h3 {
     font-family: "Noto+Sans", sans-serif;
     font-size: 1.5rem;
@@ -334,7 +339,7 @@ body.dark-mode #tag-line {
 }
 
 .case-study-item p {
-    font-size: 14px; 
+    font-size: 16px; 
     color: black; 
     line-height: 1.5;
     margin-bottom: 1rem;
@@ -360,6 +365,10 @@ body.dark-mode #tag-line {
     object-fit: cover; 
     display: block; 
     margin: 10px 0 15px 0; 
+}
+
+#column3p {
+    margin-bottom: 55px;
 }
 
 /*SERVICES SECTION*/
@@ -469,6 +478,11 @@ body.dark-mode #tag-line {
     margin-bottom: 3rem;
 }
 
+#portfoliolink {
+    font-size: 1.2rem;
+    color: var(--h2-color);
+}
+
 
 .flexslider {
     margin: 0;
@@ -482,7 +496,7 @@ body.dark-mode #tag-line {
 }
 
 .flex-direction-nav a {
-    overflow: visible !important; /* Override the default overflow: hidden */
+    overflow: visible !important; 
 }
 
 
@@ -538,6 +552,11 @@ li.css a {
     font-size: 1.2rem;
     color: var(--game-p);
     margin-bottom: 2rem;
+}
+
+#gametext {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 #game-form {
@@ -607,6 +626,46 @@ li.css a {
     color: var(--black);
     line-height: 1.6;
     margin-bottom: 0;
+}
+
+/* BACK TO TOP BUTTON */
+#back-to-top {
+    display: block; 
+    text-align: center; 
+    margin: 3rem auto 2rem auto; 
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--columns-h3-color); 
+    padding: 10px 20px;
+    border: 2px solid var(--columns-h3-color);
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    max-width: 200px; 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    
+}
+
+#back-to-top:hover {
+    background-color: var(--columns-h3-color);
+    color: white; 
+    cursor: pointer;
+}
+
+body.dark-mode #back-to-top {
+    background-color: var(--canary); 
+    color: var(--columns-h3-color); 
+    border-color: var(--columns-h3-color);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); 
+}
+
+body.dark-mode #back-to-top:hover {
+    background-color: var(--columns-h3-color); 
+    color: var(--canary); 
+    transform: translateY(-2px); 
 }
 
 /* FOOTER*/
