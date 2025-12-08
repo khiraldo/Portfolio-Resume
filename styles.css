@@ -241,12 +241,32 @@ body.dark-mode #tag-line {
     .header-content-group {
         flex-direction: column;
         text-align: center; 
+        padding: 0 20px; 
     }
     .header-content-group #profile-picture {
         margin: 0 auto 1.5rem auto; 
     }
     .header-content-group #header-text {
         text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #main-nav ul {
+        flex-direction: column;
+        align-items: center; 
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    #main-nav li {
+        margin: 5px 0; 
+    }
+    
+  
+    #logo-group {
+        align-items: center;
     }
 }
 
@@ -520,6 +540,7 @@ li.css a {
 
 .flexslider .slides img {
     width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
 }
