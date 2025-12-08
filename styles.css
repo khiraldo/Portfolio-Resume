@@ -170,10 +170,10 @@ header {
 }
 
 #main-nav a {
+    font-family: "Sigmar", "Noto+Sans", sans-serif;
     text-decoration: none;
     color: var(--main-nav-a);
-    font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 5px;
 }
 
@@ -188,19 +188,66 @@ header {
     border-radius: 50%;
     margin: 2rem auto;
     display: block;
+    flex-shrink: 0; 
 }
 
 #header-text {
     font-family: "Noto+Sans", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     line-height: 1.5;
     margin-bottom: 2rem;
     color: var(--header-text);
+    text-align: left;
 }
 .header, 
 .header * {
     color: black !important;
+}
+
+#logo-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#tag-line {
+    font-size: 0.9rem;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--black); 
+    margin-top: -10px; 
+    margin-left: 5px; 
+    line-height: 1; 
+}
+
+body.dark-mode #tag-line {
+    color: var(--header-text);
+}
+
+.header-content-group {
+    display: flex; 
+    align-items: center; 
+    gap: 30px; 
+    margin: 2rem auto; 
+    max-width: 1280px; 
+    padding: 0 100px; 
+    text-align: left; 
+}
+
+
+/* Responsive adjustment for small screens: stack content vertically */
+@media (max-width: 768px) {
+    .header-content-group {
+        flex-direction: column;
+        text-align: center; 
+    }
+    .header-content-group #profile-picture {
+        margin: 0 auto 1.5rem auto; 
+    }
+    .header-content-group #header-text {
+        text-align: center;
+    }
 }
 
 

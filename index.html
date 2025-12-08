@@ -22,22 +22,26 @@
     <body>
         <header class="header">
             <div class="header-container">
-                <img src="kayhlogo_black.png" alt="Katherine Hiraldo Logo" id="site-logo">
+                <div id="logo-group">
+                    <img src="kayhlogo_black.png" alt="Katherine Hiraldo Logo" id="site-logo">
+                    <p id="tag-line">Minimalist Structure, Maximum Impact</p>
+                </div>
                 <nav id="main-nav">
                     <ul>
                         <li><a href="#resume-link">Resume</a></li>
                         <li><a href="#services-link">Services</a></li>
                         <li><a href="#game-link">Game</a></li>
-                        <li><a href="#contact-link">Contact Form</a></li>
-                        <li><a href="https://soultechcreative.tech/">Home</a></li>
+                        <li><a href="#contactinfo">Contact</a></li>
                     </ul>
                 </nav>  
                 <button id="theme-toggle" aria-label="Toggle dark mode">
                     <img src="Files/lightmodeicon.png" alt="Toggle theme icon" id="theme-icon">
                 </button>          
             </div>
-            <img src="Files/Katherine.png" alt="Picture of Katherine Hiraldo" id="profile-picture">  
-            <p id="header-text">Digital Marketing Specialist with over 10 years of experience as a Web and Graphic Designer and 7+ years as a Content and Social Media Manager. I offer a robust combination of creative, strategic, and technical expertise that makes me an asset to any digital team. This website was created using HTML, CSS, and JavaScript.</p>        
+            <div class="header-content-group">
+                <img src="updatedpicture.jpg" alt="Picture of Katherine Hiraldo" id="profile-picture">  
+                <p id="header-text">Digital Marketing Specialist with over 10 years of experience as a Web and Graphic Designer and 7+ years as a Content and Social Media Manager. I offer a robust combination of creative, strategic, and technical expertise that makes me an asset to any digital team. This website was created using HTML, CSS, and JavaScript.</p>  
+            </div>      
         </header>
         <section class="resume"><!--I HAD TO USE DIVS ACCORDING TO THE JQUERY UI DOCUMENTATION-->
             <h2 id="resume-link">Resume</h2>
@@ -106,7 +110,7 @@
             </div>
         </section>
         <section class="services">
-            <h2 id="services-link">Featured Services</h2>
+            <h2 id="services-link">Services</h2>
             <div id="service-container">
                 <div class="main-service" data-service="1">
                     <img src="Files/1A.png" alt="A vibrant graphic design collage featuring various shapes, colors, and textures arranged artistically." id="main-serviceimage">
@@ -177,7 +181,7 @@
         </section>
         
         <section class="contact-info">
-            <h2>Get in Touch!</h2>
+            <h2 id="contactinfo">Get in Touch!</h2>
             <p>You can email me at: <a href="mailto:soultechcreative@gmail.com"><strong>soultechcreative@gmail.com</strong></a> or find me on <a href="https://www.linkedin.com/in/katherinehiraldo">LinkedIn</a></p>
         </section>
         <footer>
