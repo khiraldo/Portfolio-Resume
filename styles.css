@@ -172,14 +172,17 @@ header {
 #main-nav a {
     font-family: "Sigmar", "Noto+Sans", sans-serif;
     text-decoration: none;
-    color: var(--main-nav-a);
+    color: black;
     font-size: 1.5rem;
     padding: 5px;
 }
 
-#main-nav a:hover {
+
+#main-nav a:hover, #main-nav a:focus { 
     background-color: #0073e6;
     color: white;
+    outline: 3px solid var(--canary); 
+    outline-offset: 2px;
 }
 
 #profile-picture {
@@ -197,12 +200,8 @@ header {
     font-weight: bold;
     line-height: 1.5;
     margin-bottom: 2rem;
-    color: var(--header-text);
+    color: black;
     text-align: left;
-}
-.header, 
-.header * {
-    color: black !important;
 }
 
 #logo-group {
@@ -215,15 +214,12 @@ header {
     font-size: 0.9rem;
     font-style: italic;
     font-weight: 500;
-    color: var(--black); 
+    color: black;
     margin-top: -10px; 
     margin-left: 5px; 
     line-height: 1; 
 }
 
-body.dark-mode #tag-line {
-    color: var(--header-text);
-}
 
 .header-content-group {
     display: flex; 
